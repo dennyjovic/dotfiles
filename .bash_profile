@@ -12,6 +12,8 @@ parse_git_branch() {
 alias dcl="bundle exec rake db:drop db:create db:schema:load; RAILS_ENV=test bundle exec rake db:drop db:create db:schema:load"
 alias rsrd="rails s -e remote_development"
 alias bi="bundle install --without linux"
+alias yolo="rails db:drop db:create db:migrate"
+alias be="bundle exec"
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
@@ -134,3 +136,5 @@ else \
   # @2 - Prompt when not in GIT repo
   echo " \$ "; \
 fi)'
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
