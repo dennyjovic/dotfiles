@@ -1,0 +1,21 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "fc664f0b-c18b-4d2a-bc95-f7670bcd6e3c"
+  autosave:
+    enabled: true
+  core:
+    telemetryConsent: "no"
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "c0baf5b2-ac22-08a1-26ab-1cc120a67293"
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  welcome:
+    showOnStartup: false

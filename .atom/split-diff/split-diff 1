@@ -1,0 +1,46 @@
+# frozen_string_literal: true
+require "mandrill"
+
+class NCSA::Mandrill::MessageSender < ApplicationInteractor
+  delegate :message, :async, :ip_pool, :send_at, to: :context
+
+  def call
+    context.set_default_network_status!
+    return no_api_key_response unless api_key
+    return no_message_response unless message&.is_a?(Hash)
+
+    mandrill.messages.send(message, is_async?, ip_pool, send_at)
+
+    context.response = "success"
+  end
+
+  private
+
+  def is_async?
+    !!(async)
+  end
+
+  def mandrill
+    return @mandrill if defined? @mandrill
+
+    @mandrill = Mandrill::API.new api_key
+  end
+
+  def api_key
+    ENV["MANDRILL_OUTBOUND_KEY"]
+  end
+
+  def no_api_key_response
+    context.fail!({
+      response: "Email was not sent. No API key provided.",
+      status: :not_found
+    })
+  end
+
+  def no_message_response
+    context.fail!({
+      response: "No message provided",
+      status: :bad_request
+    })
+  end
+end

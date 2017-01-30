@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/rm/0hrkcqrs6332b3tjws72yynj2h2329/T/d-1161011-54558-1qcph63/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/rm/0hrkcqrs6332b3tjws72yynj2h2329/T/d-1161011-54558-1qcph63/package.tgz",
+        "spec": "/private/var/folders/rm/0hrkcqrs6332b3tjws72yynj2h2329/T/d-1161011-54558-1qcph63/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/rm/0hrkcqrs6332b3tjws72yynj2h2329/T/apm-install-dir-1161011-54558-rtivzp"
+    ]
+  ],
+  "_from": "../d-1161011-54558-1qcph63/package.tgz",
+  "_id": "html-tab@1.0.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/html-tab",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/rm/0hrkcqrs6332b3tjws72yynj2h2329/T/d-1161011-54558-1qcph63/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/rm/0hrkcqrs6332b3tjws72yynj2h2329/T/d-1161011-54558-1qcph63/package.tgz",
+    "spec": "/private/var/folders/rm/0hrkcqrs6332b3tjws72yynj2h2329/T/d-1161011-54558-1qcph63/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-1161011-54558-1qcph63/package.tgz",
+  "_shasum": "e505e952ed193f4cb209d1df78d89d8e4b7dddbd",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/rm/0hrkcqrs6332b3tjws72yynj2h2329/T/d-1161011-54558-1qcph63/package.tgz",
+  "_where": "/private/var/folders/rm/0hrkcqrs6332b3tjws72yynj2h2329/T/apm-install-dir-1161011-54558-rtivzp",
+  "activationCommands": {
+    "atom-workspace": [
+      "html-tab:open"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/mark-hahn/html-tab/issues"
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.0.3",
+    "sub-atom": "1.0.x"
+  },
+  "description": "Example package to open any HTML in a tab.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.170.0"
+  },
+  "homepage": "https://github.com/mark-hahn/html-tab#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "html-tab",
+  "optionalDependencies": {},
+  "readme": "# html-tab package\n\nExample Atom editor package to open any HTML in a tab\n\nThis example package includes the minimum amount of code to open arbitrary HTML in a tab in the Atom editor.  It can be examined for educational purposes and it can act as a template for a new HTML package.\n\nFeel free to ask questions at the Atom discussion group: https://discuss.atom.io/\n\n## Usage\n  \n- Install with `apm install html-tab`\n- Press `ctrl-alt-H`\n- Read the source\n  - Open the settings tab\n  - Type `html` in the package search box on the left\n  - Select Html Tab\n  - On the right side click `Open In Atom`\n  \n## Future\n\nExpand this into a full browser.  (easy peasy)\n\n## License\n\nCopyright Mark Hahn by MIT license",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark-hahn/html-tab.git"
+  },
+  "version": "1.0.2"
+}
