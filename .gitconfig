@@ -11,6 +11,7 @@
   rb = rebase
   dc = diff --cached
   la = log --pretty=format:'%C(yellow)%h%C(reset) - %an [%C(green)%ar%C(reset)] %s'
+  brdel = !git branch --merged | grep -v '*' | grep -v master | grep -v dev | xargs -n 1 git branch -d
   uncommit = reset --soft HEAD^
   unstage = reset
   unstash = stash pop
